@@ -1,0 +1,28 @@
+.form{
+    color: #000000;
+    font-family: "Times New Roman", serif;
+    font-size: 13px 120%;
+    margin: 0.5em 0 1em;
+    padding: 0.5em;
+    background-color: #cad8f7;
+    }
+h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #dcabde;
+}
+
+legend{
+    text-transform: uppercase;
+    font-size: 150%;
+}
+fieldset{
+    padding: 20px; 
+    padding-left: 40px;
+}

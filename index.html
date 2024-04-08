@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" title="Color">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="contacto">
+        <h2>Formulario de Informaci&oacute;n</h2>
+        <form class="form" action="/action_page.php" method="get" novalidate>
+              <fieldset>
+                    <legend>Tus datos personales</legend>
+                    Nombre:
+                        <input style="width: 30%;" type="text" name="nombre" id="nombre" placeholder="Tu nombre o nombres" autocomplete="on" required> *
+                    <br>
+                    <br>
+                    <label for="apellido"> Apellido:
+                        <input style="width: 30%;" type="text" name="apellido" id="apellido" placeholder="Tus apellidos" required> *
+                    </label>
+                    <br>
+                    <br>
+                    <label for="edad"> Edad:
+                        <input type="number" name="edad" id="edad" required> *
+                    </label>
+                    <br>
+                    <br>
+
+                    <radiogroup>
+                        <label for="promociones">Sexo:</label>
+                        <br>
+                        <input type="radio" id="sexo" name="sexo" value="hombre"> Hombre<br>
+                        <input type="radio" id="sexo" name="sexo" value="mujer"> Mujer<br>
+                        <input type="radio" id="sexo" name="sexo" value="otro" autofocus checked> Otro<br>
+                    </radiogroup>
+                    <br>
+                    <label for="correo"> Tu correo electr&oacute;nico:
+                        <input style="width: 50%;" type="email" name="correo" id="correo" placeholder="tucorreo@dominio.com" validate="true">
+                    </label>
+                    <br>
+                    <br>
+              </fieldset>
+
+              <fieldset>
+                  <legend>Tus datos escolares</legend>
+                    <label>¿Cu&aacute;l es tu ultimo grado de estudios?</label>
+                    <select class="nivelest" name="nivelest">
+                      <option value="lic">Licenciatura</option>
+                      <option value="maestro" selected>Maestria</option>
+                      <option value="doctor">Doctorado</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="uni"> Universidad:
+                        <input style="width: 80%;" type="text" name="uni" id="uni" placeholder="El nombre de la universidad en que te recibiste">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="carrera">¿Cu&aacute;l es tu carrera?
+                        <input style="width: 50%;"  type="text" name="carrera" id="carrera">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="urluni">URL:
+                        <input style="width: 40%;" type="text" name="urluni" id="urluni" placeholder="El URL de la universidad de la que egresaste">
+                    </label>
+                    <label for="diruni">Direcci&oacute;n:
+                        <input style="width: 40%;" type="text" name="diruni" id="diruni" placeholder="La direcci&oacute;n de la universidad de la que egresaste">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="estex">Si tienes mestria o doctorado, ¿en qu&eacute; son y d&oacute;nde los cursaste?
+                        <input style="width: 80%; height: 50px; text-align: justify; "  type="text" name="estex" id="estex" placeholder="Nombres de los posgrados y donde los estudiaste.">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="urlposg">URL:
+                        <input style="width: 40%;" type="text" name="urlposg" id="urlposg" placeholder="El URL de la universidad de la que egresaste">
+                    </label>
+                    <label for="dirposg">Direcci&oacute;n:
+                        <input style="width: 40%;" type="text" name="dirposg" id="dirposg" placeholder="La direcci&oacute;n de la universidad de la que egresaste">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="proyectos">¿Has aparticipado en alg&uacute;n proyecto? Cu&eacute;ntanos:
+                        <input style="width: 80%; height: 80px; text-align: justify; "  type="text" name="proyectos" id="proyectos" placeholder="Escribe aqu&iacute; acerca de tus proyectos">
+                    </label>
+                    <br>
+                    <br>
+                    
+                        <label for="pdf">Selecciona tu archivo pdf:</label>
+                        <br>
+                        <input type="file" name="archivo_pdf" id="pdf" accept=".pdf">
+                        <br>
+                        <br>
+                    <label for="videos">Sube tu video:</label>
+                    <br>
+                        <input type="file" name="archivo_video" accept="video/*">
+                        <br>
+                        <br>
+              </fieldset>
+
+              <button type="reset">Borrar todo</button>
+
+              <input type="submit">
+
+
+      </form>
+  </div>
+
+</body>
+</html>
